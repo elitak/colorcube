@@ -1,0 +1,15 @@
+[package]
+name = "colorcube"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "colorcube"
+path = "src/main.rs"
+
+[dependencies]
+eframe = { version = "0.31", features = ["default"] }
+egui = "0.31"
+
+[profile.release]
+opt-level = 2
